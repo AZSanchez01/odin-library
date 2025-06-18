@@ -142,3 +142,46 @@ main {
 .card-buttons .toggle-read {
     background: var(--color-accent);
 }
+
+/*MODAL & FORM STYLING*/
+.add-book-modal {
+    margin: auto;
+    padding: var(--space-md);
+    border: 3px solid var(--color-accent);
+    border-radius: 2rem;
+    width: 60ch;
+    height: 90ch;
+    gap: var(--space-sm);
+}
+
+.add-book-modal form,
+.add-book-modal form>div {
+    display: flex;
+    flex-direction: column;
+}
+.add-book-modal form {
+    gap: var(--space-md);
+}
+.add-book-modal form input {
+    border: 1px solid var(--color-accent);
+    border-radius: 0.5rem;
+}
+
+#form-btns {
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space-xlg);
+}
+#form-btns button {
+    border-radius: 1rem;
+    padding: var(--space-sm) var(--space-lg);
+    font-weight: bold;
+    color: white;
+}
+
+#form-btns #submit {
+    background: darkolivegreen;
+}
+#form-btns #cancel {
+    background: var(--color-primary-1);
+}

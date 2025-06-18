@@ -11,7 +11,45 @@
     <div class="sidebar">
         <img src="./img/ranpo.jpg" alt="Library logo">
         <div class="header-text ">Your Library</div>
-        <button class="addBook">Add New Book+</button>
+        <button class="add-book">Add New Book+</button>
+        <dialog class="add-book-modal">
+            <form action="">
+                <legend class="header-text"><u>Add new book:</u></legend>
+                <div>
+                    <label for="form-get-title">Title:</label>
+                    <input name="title" type="text" id="form-get-title" placeholder="e.g. Crime & Punishment">
+                </div>
+                <div>
+                    <label for="form-get-author">Author:</label>
+                    <input name="author" type="text" id="form-get-author" placeholder="e.g. Fyodor Dostoevsky">
+                </div>
+                <div>
+                    <label for="form-get-pages">Page No:</label>
+                    <input name="pageNum" type="number" id="form-get-pages" placeholder="e.g. 123">
+                </div>
+                <div>
+                    <label for="form-get-synopsis">Synopsis:</label>
+                    <textarea name="synopsis" id="form-get-synopsis" placeholder="Insert Description" ></textarea>
+                </div>
+                <div>
+                    <label for="">Have you read this book?</label>
+                    <div class="radio-has-read">
+                        <div>
+                            <input type="radio" id="true" name="isRead" value="true">
+                            <label for="true">Yes, I've read it</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="false" name="isRead" value="false" checked="true">
+                            <label for="false">No, I haven't</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="form-btns">
+                    <button type="submit" id="submit">Submit</button>
+                    <button id="cancel">Cancel</button>
+                </div>
+            </form>
+        </dialog>
     </div>
     <main>
         <div class="card">
